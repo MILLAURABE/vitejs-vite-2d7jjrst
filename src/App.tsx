@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 
 const SUPABASE_URL = 'https://qtdbybarqfociewqfbgc.supabase.co';
-const SUPABASE_KEY = 'eyJhbGci...'
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF0ZGJ5YmFycWZvY2lld3FmYmdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzNDEyMzQsImV4cCI6MjA5MzkxNzIzNH0.XdkINI8JN4ZfvUUvue-YFQnYanUFiJAhRU1ULXGZU2w'
 
 async function sbGet(table: string) {
   const r = await fetch(
