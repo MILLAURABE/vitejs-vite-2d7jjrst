@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 
 const SUPABASE_URL = 'https://qtdbybarqfociewqfbgc.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_Yrd_d_Y07tUMqK_tNveGEQ_GJysk7yk';
+const SUPABASE_KEY = 'eyJhbGci...'
 
 async function sbGet(table: string) {
   const r = await fetch(
