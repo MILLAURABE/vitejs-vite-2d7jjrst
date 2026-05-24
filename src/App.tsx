@@ -3313,7 +3313,7 @@ export default function App() {
   const handleAddCostureira = useCallback(async (form: any) => {
     const { id, ...rest } = form;
     try {
-      const result = await sbInsert('costureiras', rest);
+      const result = await sbInsert('costureiras', { ...rest, colaborador_id: rest.colaborador_id || null };
       const nova = result?.[0] || { ...form, id: gerarId() };
       setCostureiras((prev) => [...prev, nova]);
       flash();
